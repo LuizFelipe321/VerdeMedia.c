@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+int main()
+{
+    float soma, soma2, n1,n2,n3,n4, media, notaExame;
+
+    scanf("%f", &n1);
+    n1 = n1 * 2;
+
+    scanf("%f", &n2);
+    n2 = n2 * 3;
+
+    scanf("%f", &n3);
+    n3 = n * 4;
+
+    scanf("%f", &n4);
+    
+    soma = n1 + n2 + n3 + n4;
+
+    media = soma / 4;
+
+    if (media >= 7) {
+        printf("Aluno aprovado.\n");
+    }
+    if (media < 5) {
+        printf("Aluno reprovado.\n");
+    }
+    if (media > 5 && media < 6.9) {
+        printf("Aluno em exame.\n");
+        scanf("%f", &notaExame);
+        printf("Nota do exame: %d\n", notaExame );
+        soma2 = notaExame + media;
+        media = soma2 / 2;
+        if (media >= 5) {
+            printf("Aluno aprovado %d\n", soma2);
+        } else {
+        printf("Aluno reprovado\n");
+        }
+
+    printf("Media final:%d", &soma2);
+    }
+    return 0;
+}
+
+
+
